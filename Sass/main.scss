@@ -1,0 +1,16 @@
+$primary: pink;
+$secondary: green;
+$warning: red;
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  "maincolor": magenta,
+  "other": purple,
+  "light-blue": rgb(97, 97, 255),
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
